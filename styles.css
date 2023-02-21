@@ -92,12 +92,11 @@ nav h1 {
 }
 
 #home {
-  background: url(home.png);
   width: 100vw;
   height: 100vh;
   margin-bottom: 0;
   padding-bottom: 0;
-  background: url(home.png) no-repeat center center fixed;
+  background: url(home-color.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -178,10 +177,20 @@ nav h1 {
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;
+margin-top: 1rem;
+-webkit-box-shadow: 7px 18px 43px 10px rgba(0,0,0,0.29);
+-moz-box-shadow: 7px 18px 43px 10px rgba(0,0,0,0.29);
+box-shadow: 7px 18px 43px 10px rgba(0,0,0,0.29);
+transition: 0.5s;
+}
 
-    -webkit-box-shadow: 7px 18px 43px 10px rgba(0,0,0,0.38);
--moz-box-shadow: 7px 18px 43px 10px rgba(0,0,0,0.38);
-box-shadow: 7px 18px 43px 10px rgba(0,0,0,0.38);
+/* .box:hover{
+    scale:1.1;
+    transition: .5s;
+} */
+
+.box::after{
+    transition: 1s;
 }
 
 header{
@@ -196,7 +205,10 @@ header{
 }
 
 
-
+#contact{
+    width: 100vw;
+    height: 100vh;
+}
 
 
 
@@ -225,4 +237,18 @@ header{
 
 .whatsapp-ico:hover{
     box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}
+
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(0, 217, 255);
+  border-radius: 50px;
 }
