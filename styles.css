@@ -1,0 +1,217 @@
+:root {
+  --body-theme: #e4f7ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--body-theme);
+  overflow-x: hidden;
+}
+
+nav {
+  background-image: linear-gradient(
+    to right,
+    #90caff,
+    #8ac1f9,
+    #85b8f2,
+    #80b0ec,
+    #7ca7e5,
+    #76a5e4,
+    #6fa2e3,
+    #68a0e2,
+    #5aa4e6,
+    #49a9ea,
+    #33adec,
+    #00b1ee
+  );
+  position: fixed;
+  width: 100vw;
+  height: 4rem;
+  z-index: 2;
+
+  display: block;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-box-shadow: 5px 14px 51px 19px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 5px 14px 51px 19px rgba(0, 0, 0, 0.32);
+  box-shadow: 5px 14px 51px 19px rgba(0, 0, 0, 0.32);
+}
+
+nav h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  color: white;
+  margin-top: 10px;
+  text-indent: 20px;
+}
+
+.navbtn {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: white;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  margin-top: 0.2rem;
+  margin-right: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navitems {
+  display: flex;
+  flex-direction: column;
+}
+
+.navitems a {
+  width: 100vw;
+  text-decoration: none;
+  color: white;
+  font-family: "Arimo", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+  text-indent: 20px;
+  padding: 5px;
+}
+
+.navitems a:hover {
+  background-color: rgba(255, 255, 255, 0.411);
+  transition: 0.5s;
+}
+
+.home {
+  background: url(home.png);
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background: url(home.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  transition: 0.5s;
+}
+
+.custom-shape-divider-bottom-1676971232 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.custom-shape-divider-bottom-1676971232 svg {
+  position: relative;
+  display: block;
+  width: calc(135% + 1.3px);
+  height: 167px;
+}
+
+.custom-shape-divider-bottom-1676971232 .shape-fill {
+  fill: var(--body-theme);
+}
+
+.about {
+  width: 100vw;
+
+  background-color: var(--body-theme);
+}
+
+.greetings {
+  margin-top: 0;
+  text-align: center;
+}
+
+.greetings h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.greetings p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.intro {
+  width: 70vw;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.services {
+  width: 100vw;
+  background-color: var(--body-theme  );
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding-top: 10rem;
+}
+
+.box{
+    width: 20rem;
+    height: 30rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+header{
+    font-size: 30px;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.box p {
+    width: 80%;
+        font-family: "Nunito", sans-serif;
+        font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.whatsapp-ico{
+    fill: white;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    background-color: #4dc247;
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    /* box-shadow: 2px 2px 11px rgba(0,0,0,0.7); */
+    position: fixed;
+    bottom: 20px;
+    right : 20px;
+    z-index: 10;
+}
+
+.whatsapp-ico:hover{
+    box-shadow: 2px 2px 11px rgba(0,0,0,0.7);
+}
