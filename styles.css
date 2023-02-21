@@ -106,9 +106,8 @@ nav h1 {
 }
 
 .custom-shape-divider-bottom-1676971232 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  top: -120px;
   width: 100%;
   overflow: hidden;
   line-height: 0;
@@ -123,12 +122,11 @@ nav h1 {
 }
 
 .custom-shape-divider-bottom-1676971232 .shape-fill {
-  fill: var(--body-theme);
+  fill:var(--body-theme);
 }
 
 #about {
   width: 100vw;
-  margin-top: -30px;
   background-color: var(--body-theme);
 }
 
@@ -274,7 +272,7 @@ header{
   
   .greetings p {
     font-family: "Nunito", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
   
