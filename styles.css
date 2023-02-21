@@ -2,12 +2,18 @@
   --body-theme: #e4f7ff;
 }
 
+html{
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: var(--body-theme);
   overflow-x: hidden;
+  transition: 0.5s ease;
 }
 
 nav {
@@ -34,7 +40,7 @@ nav {
   display: block;
   align-items: center;
   overflow: hidden;
-  transition: 0.5s;
+  transition:all 0.5s ease ;
   -webkit-box-shadow: 5px 14px 51px 19px rgba(0, 0, 0, 0.32);
   -moz-box-shadow: 5px 14px 51px 19px rgba(0, 0, 0, 0.32);
   box-shadow: 5px 14px 51px 19px rgba(0, 0, 0, 0.32);
@@ -77,6 +83,7 @@ nav h1 {
   margin-top: 1.2rem;
   text-indent: 20px;
   padding: 5px;
+  transition: all ease-in-out 0.5s;
 }
 
 .navitems a:hover {
@@ -84,7 +91,7 @@ nav h1 {
   transition: 0.5s;
 }
 
-.home {
+#home {
   background: url(home.png);
   width: 100vw;
   height: 100vh;
@@ -120,9 +127,9 @@ nav h1 {
   fill: var(--body-theme);
 }
 
-.about {
+#about {
   width: 100vw;
-
+  margin-top: -30px;
   background-color: var(--body-theme);
 }
 
@@ -150,7 +157,7 @@ nav h1 {
   text-align: center;
 }
 
-.services {
+#services {
   width: 100vw;
   background-color: var(--body-theme  );
 
@@ -171,6 +178,10 @@ nav h1 {
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;
+
+    -webkit-box-shadow: 7px 18px 43px 10px rgba(0,0,0,0.38);
+-moz-box-shadow: 7px 18px 43px 10px rgba(0,0,0,0.38);
+box-shadow: 7px 18px 43px 10px rgba(0,0,0,0.38);
 }
 
 header{
