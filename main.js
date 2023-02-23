@@ -1,3 +1,19 @@
+if(window.innerWidth > 1000){
+imgtwo()
+}else{
+imgone()
+}
+
+function imgone(){
+    document.getElementById('footerimg').setAttribute("src","layered-waves-mobile.svg");
+
+}
+
+function imgtwo(){
+    document.getElementById('footerimg').setAttribute("src","layered-waves.svg");
+
+}
+
 let navbar = document.getElementById('nav')
 let navbtn = document.getElementById('navbtn')
 
@@ -53,4 +69,21 @@ box4.addEventListener('mouseleave', () => {
     box4.style.scale = "1"
 })
 
+let message="Sent successfully"
+
+function sendEmail(){
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "lekhwargokul@gmail.com",
+        Password: "4742368EE210B4186663AC03727F709AF887",
+        To: 'iamgokx@gmail.com',
+        From: "iamgokx@gmail.com",
+        Subject: "Subject",
+        Body: document.getElementById('message').value
+    }).then(
+        message => alert(message)
+    ).catch(
+        alert("Not sent")
+    )
+}
 
