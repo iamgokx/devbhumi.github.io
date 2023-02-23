@@ -6,6 +6,7 @@
 html {
   scroll-behavior: smooth;
   transition: 1s;
+  overflow-x: hidden;
 }
 
 body {
@@ -444,16 +445,21 @@ button{
 footer img{
   width: 100%;
   z-index: 1;
+  position: relative;
+  bottom: -100px;
 }
 
 .footerbox {
   width: 100vw;
   height: 50vh;
   position: relative;
-  top: -400px;
+  top: -100px;
   z-index: 2;
-  background-color: red;
   text-align: center;
+}
+
+.footerbox P{
+  font-family: "Nunito", sans-serif;
 }
 
 .whatsapp-ico {
