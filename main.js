@@ -1,18 +1,18 @@
-if(window.innerWidth > 1000){
-imgtwo()
-}else{
-imgone()
-}
+// if(window.innerWidth > 1000){
+// imgtwo()
+// }else{
+// imgone()
+// }
 
-function imgone(){
-    document.getElementById('footerimg').setAttribute("src","layered-waves-mobile.svg");
+// function imgone(){
+//     document.getElementById('footerimg').setAttribute("src","layered-waves-mobile.svg");
 
-}
+// }
 
-function imgtwo(){
-    document.getElementById('footerimg').setAttribute("src","layered-waves.svg");
+// function imgtwo(){
+//     document.getElementById('footerimg').setAttribute("src","layered-waves.svg");
 
-}
+// }
 
 let navbar = document.getElementById('nav')
 let navbtn = document.getElementById('navbtn')
