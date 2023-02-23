@@ -306,7 +306,7 @@ header {
 
 .contactinfoboxtwo {
   width: 30rem;
-  background-color: rgb(0, 217, 255);
+  background-color: rgb(194, 246, 255);
   height: auto;
   padding-top: 10px;
   border-radius: 40px;
@@ -344,6 +344,7 @@ input {
   outline: none;
   border: none;
   border-radius: 20px;
+  background-color: #ffffff9f;
 }
 
 textarea {
@@ -354,6 +355,8 @@ textarea {
   border: none;
   border-radius: 20px;
   text-indent: 10px;
+  background-color: #ffffff9f;
+
 }
 
 button {
@@ -364,6 +367,7 @@ button {
   border: none;
   font-family: "Arimo", sans-serif;
   font-size: large;
+  background-color: #05c0ff;
 }
 
 @media only screen and (max-width: 700px) {
